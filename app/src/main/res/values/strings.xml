@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">MubTransito</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="title_activity_menu_pincipal">MenuPrincipal</string>
+
+    <string name="EsquceuSenha">Esqueceu a senha?</string>
+
+    <string name="textoBotao">Login</string>
+    <string name="TextoBotão">Salvar</string>
+    <string name="botao_salvar">Salvar Dados</string>
+    <string name="Texto_Nome_Usuario_Ocorrencia">Nome Completo</string>
+    <string name="Texto_Local_Ocor">Local da Ocorrência</string>
+    <string name="Texto_Data_Ocorrencia">Data da Ocorrência</string>
+    <string name="Texto_Botao_Ocorrencia">Enviar</string>
+    <string name="Texto_Recuperação_Senha">Informe seu Email para que possamos realizar o processo de recuperação de senha.</string>
+    <string name="Texto_Botao_Recuperar_Senha">Enviar</string>
+    <string name="Texto_Local_Ocorrencia">Local da Ocorrência</string>
+    <string name="Imagem_Ocorrência">Imagem da Ocorrência</string>
+    <string name="Texto_Data_Ocorrencia_Postadada">Data</string>
+    <string name="Texto_Horario_Ocorrencia">Horário</string>
+    <string name="Texto_Status_Ocor">Status:</string>
+    <string name="Texto_Status_ocorrencia">Status:</string>
+    <string name="Texto_status_Ocorrencia">Status:</string>
+    <string name="Texto_Status_Ocorrencia">Status:</string>
+    <string name="Texto_Botão_Alterar_Ocorrencia">Alterar Dados</string>
+    <string name="Caixa_Observações">Observações:</string>
+    <string name="Texto_Selecionar_Tipo_Ocorrencia">Selecione o tipo de ocorrência que deseja consultar</string>
+    <string name="Texto_Radio_Button_1">Andamento</string>
+    <string name="Texto_Radio_Button_2">Analisando</string>
+
+    //Tela Consultar Ocorrencia
+    <string name="Texto_Radio_Button_3">Finalizada</string>
+    <string name="Texto_Radio_Button_4">Concluida</string>
+    <string name="Texo_Informativo_Mes">Selecione o mês desejavel</string>
+    <string name="Texto_Botão_Pesquisar_Ocorrencias">Pesquisar</string>
+    <string name="Nav_AtenderOcorrencia">Atender Ocorrências</string>
+    <string name="id_Tipo_ocorrencia">Tipo de Ocorrência:</string>
+    <string name="id_Img_ocorrencia">Imagem da Ocorrência</string>
+    <string name="Texto_Data_Nascimento">01/01/2019</string>
+    <string name="Texto_Telefone">(88) 9 9999-9999</string>
+    <string name="Data_Ocorencia">Data:</string>
+    <string name="horario_ocorrencia">Horário:</string>
+    <string name="Botao_Atender">Atender</string>
+    <string name="botao_recusar">Recusar</string>
+    <string name="Texto_Nascimento">Data de Nascimento</string>
+    <string name="Texto_Tipo_Ocorrencia_Listrar_Ocorrencia">Selecione o tipo de Ocorrência que deseja Pesquisar</string>
+    <string name="Texto_CPF">123.456.789-00</string>
+    <string name="Menu_Usuario_Texto_CPF">123.456.789-55</string>
+    <string name="Menu_Usuario_Nascimento">01/01/2019</string>
+    <string name="Menu_principal_Conta">Dados da Conta</string>
+    <string name="Texto_Selecionar_Atender_Ocorrencia">Selecione a ocorrencia que deseja atender</string>
+    <string name="Texto_Alterar_Ococrrencia">Selecione a ocorrência que deseja alterar</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="todo">TODO</string>
+    <string-array name="ocorrencias">
+        <item></item>
+        <item>Semáforo Quebrado</item>
+        <item>Obstrução Acidental</item>
+        <item>Obstrução Veicular</item>
+        <item>Solicitação de Faixa de Pedestre</item>
+        <item>Placas Quebradas</item>
+        <item>Sinalização Incorreta</item>
+    </string-array>
+    <string-array name="Status_Ocorrencias">
+        <item></item>
+        <item>Em Andamento</item>
+        <item>Finalizada</item>
+        <item>Concluída</item>
+        <item>Cancelada</item>
+    </string-array>
+
+    <string-array name="spinner_meses">
+        <item></item>
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Março</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Dezembro</item>
+    </string-array>
+</resources>
+
+
+
+
+

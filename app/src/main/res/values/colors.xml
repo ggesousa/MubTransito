@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0EB3EF</color>
+    <color name="colorPrimaryDark">#0EB3EF</color>
+    <color name="colorAccent">#0EB3EF</color>
+    <color name="colorBotao">#3ACD50</color>
+    <color name="contornoBotao">#E3E1DC</color>
+    <color name="textoBotao">#FFFFFF</color>
+    <color name="caixa_texto">#FFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="ic_launcher_background">#ffffff</color>
+    <color name="ic_edicao_background">#ffffff</color>
+    <color name="ic_menulateral_perfil_background">#ffffff</color>
+    <color name="ic_atender_ocorrencia_background">#ffffff</color>
+</resources>
