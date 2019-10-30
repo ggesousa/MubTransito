@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view_agente">
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_conta_usuario"
+            android:icon="@drawable/user_icon"
+            android:title="Conta" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_listrar_ocorrencias"
+            android:icon="@drawable/icon_occurrence"
+            android:title="Minhas Ocorrências" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_consultar_ocorrencia"
+            android:icon="@drawable/icon_occurrence_consult"
+            android:title="Consultar Ocorrências" />
         <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:id="@+id/nav_atender_ocorrencia"
+            android:icon="@drawable/icon_meet_occurrence"
+            android:title="@string/Nav_AtenderOcorrencia" />
+
+        <item
+            android:id="@+id/nav_alterar_ocorrencia"
+            android:icon="@drawable/icon_occurrence_edit"
+            android:title="@string/Nav_AlterarOcorrencia" />
+
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
-        </menu>
-    </item>
 
 </menu>
