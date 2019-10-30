@@ -41,12 +41,12 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/NomeUsuario"
+                    android:id="@+id/tvAltOcrNmUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Cassiano Silva"
+                    android:text="Usuário"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -58,7 +58,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/ctLocalOcorrencia"
+                    android:id="@+id/tvLocalOcorrencia"
                     android:layout_width="380dp"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
@@ -106,7 +106,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/ctDataOcorrencia"
+                    android:id="@+id/tvDataOcorrencia"
                     android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
@@ -115,7 +115,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/ctHorarioOcorrencia"
+                    android:id="@+id/tvHorarioOcorrencia"
                     android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -138,7 +138,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/ctStatusOcorrencia"
+                    android:id="@+id/tvStatusOcorrencia"
                     android:layout_width="5dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
