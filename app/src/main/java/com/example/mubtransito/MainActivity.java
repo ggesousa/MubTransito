@@ -8,7 +8,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +23,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
     EditText ctLoginEmail, ctLoginSenha;
-    TextView ctCadastrar;
+    TextView tvCadastrar;
     Button btLogin;
     ProgressDialog load;
     String emailLogin, senhaLogin;
@@ -36,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ctLoginEmail = (EditText) findViewById(R.id.ctLoginEmail);
         ctLoginSenha = (EditText) findViewById(R.id.ctLoginSenha);
         btLogin = (Button) findViewById(R.id.btLogin);
+        tvCadastrar = (TextView) findViewById(R.id.tvCadastrar);
 
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
                     login = new GetJson();
                 }
                 login.execute();
+            }
+        });
+
+        tvCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CadastrarUsuario.class);
+                startActivity(intent);
             }
         });
     }
@@ -72,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject json = new JSONObject();
                 json.put("email", emailLogin);
                 json.put("senha", senhaLogin);
-                return util.postTeste("http://192.168.137.1:8080/user/login", json);
+                return util.postTeste("http://192.168.137.1:8080/user/login-mobile", json);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -94,41 +102,29 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("ID DO USUÁRIOOOOOOOOOOOOOO" + jsonObject.getLong("id"));
 
                     usuario.setId(1L);
-                    usuario.setIdUsuarioAPI(Long.parseLong(jsonObject.getString("id")));
+
                     usuario.setNome(jsonObject.getString("nomeUsuario"));
                     usuario.setEmail(jsonObject.getString("email"));
                     usuario.setNvAcesso(jsonObject.getInt("nvAcesso"));
                     usuario.setManterLogado(true);
-
-                    /*
-                     ** Disparando requisção para consulta se o usuário é um agente de trânsito.
-                     */
-
-                    try {
-                        String agente = util.getInfFromGET("http://192.168.137.1:8080/agente/buscar-agente-usuario/"
-                                + usuario.getIdUsuarioAPI());
-                        jsonObject = new JSONObject(agente);
-                        aux = jsonObject.getInt("id");
-                    } catch (Exception e) {
-                        Log.e("Erro ao buscar agente", e.toString());
-                        e.printStackTrace();
-                    }
+                    usuario.setStAtividade(true);
 
                     /*
                      ** Verificando se o usuário é um agente de trânsito
                      */
-                    if (aux == 0) {
+                    if(usuario.getNvAcesso() == 2){
+                        usuario.setIdUsuarioAPI(Long.parseLong(jsonObject.getString("idUsuarioAPI")));
+                        usuario.setAgente(true);
+                        usuario.setCidade(jsonObject.getString("cidade"));
+                    }else{
+                        usuario.setIdUsuarioAPI(Long.parseLong(jsonObject.getString("id")));
                         usuario.setAgente(false);
                         usuario.setCidade("Não informada");
-                    } else {
-                        usuario.setAgente(true);
-                        usuario.setCidade(jsonObject.getJSONObject("departamento").getJSONObject("endereco").getString("cidade"));
                     }
-
                     /*
                      ** Inserindo/Atualizando dados do usuário LOCALMENTE
                      */
-                    atualizarUsuarioLocal(usuario);
+                    Log.d("INSERIDO LOCALMENTE", atualizarUsuarioLocal(usuario).toString()) ;
                     Intent intent = new Intent(getBaseContext(), MenuPrincipal.class);
                     startActivity(intent);
                 } catch (Exception e) {

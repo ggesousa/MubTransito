@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 public class Splash extends AppCompatActivity {
 
-    private final int DURACION_SPLASH = 3000;
+    private final int DURACION_SPLASH = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class Splash extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                /*ConsultarLocalmenteTask atualizarUsuarioLocal = null;
+                ConsultarLocalmenteTask atualizarUsuarioLocal = null;
                 if (atualizarUsuarioLocal == null) {
                     atualizarUsuarioLocal = new ConsultarLocalmenteTask();
                 } else {
@@ -33,9 +33,7 @@ public class Splash extends AppCompatActivity {
                     atualizarUsuarioLocal = new ConsultarLocalmenteTask();
                 }
                 atualizarUsuarioLocal.execute();
-                finish();*/
-                Intent intent = new Intent(Splash.this, MenuPrincipal.class);
-                startActivity(intent);
+                finish();
             }
 
         }, DURACION_SPLASH);
