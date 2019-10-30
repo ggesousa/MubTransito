@@ -196,7 +196,7 @@
                     android:background="@drawable/botao_customizado"
                     android:gravity="center"
                     android:text="@string/TextoBotão"
-                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>

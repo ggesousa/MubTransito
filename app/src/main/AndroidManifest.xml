@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UsuarioMenu"></activity>
+        <activity android:name=".SelecionarConsultaOcorrencia"></activity>
+        <activity android:name=".SelecionarAtenderOcorrencia" />
+        <activity android:name=".SelecionarAlterarOcorrencia" />
+        <activity android:name=".RecuperarSenha" />
+        <activity android:name=".ListarOcorrencia" />
+        <activity android:name=".ConsultarOcorrencia" />
+        <activity android:name=".AtenderOcorrencia" />
+        <activity android:name=".AlterarOcorrencia" />
+        <activity android:name=".InserirOcorrencia" />
+        <activity android:name=".UsuarioMenu" />
         <activity android:name=".CadastrarUsuario" />
         <activity
             android:name=".MenuPrincipal"

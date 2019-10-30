@@ -9,11 +9,13 @@
 
 
     <LinearLayout
+        android:id="@+id/layoutGeral"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/layoutCabecalho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -40,7 +42,7 @@
                 android:id="@+id/imLogin"
                 android:layout_width="18dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 android:contentDescription="TODO"
                 app:srcCompat="@mipmap/ic_user" />
@@ -138,37 +140,6 @@
                 android:gravity="center"
                 android:text="@string/textoBotao"
                 android:textColor="@color/textoBotao" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="290dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="60dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/ctLembre-me"
-                android:layout_width="117dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:text="Remember me"
-                android:textColorLink="@color/design_default_color_primary"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/ctEsqueceuSenha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="1"
-                android:text="@string/EsquceuSenha"
-                android:textColor="@android:color/primary_text_light_nodisable" />
-
         </LinearLayout>
 
     </LinearLayout>
